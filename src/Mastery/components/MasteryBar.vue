@@ -7,10 +7,10 @@ const props = defineProps<{
 </script>
 
 <template>
-    <div class="border border-blue-300 flex flex-row justify-between">
+    <div class="border border-blue-300 flex flex-row justify-between mt-2 pl-1">
         <!-- <img src=""/> -->
-        <span>{{ props.mastery.Name }}</span>
-        <span class="w-8">{{ props.mastery.Cost }}</span>
+        <span class="font-bold">{{ props.mastery.Name }}</span>
+        <span class="w-4">{{ props.mastery.Cost }}</span>
     </div>
 </template>
 

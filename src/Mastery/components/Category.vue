@@ -8,7 +8,7 @@ const props = defineProps<{
 </script>
 
 <template>
-    <div class="border border-red-500">
+    <div class="border border-red-500 mt-2 p-1">
         <div>{{ props.masteriesInCategory.Category }}</div>
 
         <div>

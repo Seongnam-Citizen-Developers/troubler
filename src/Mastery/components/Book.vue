@@ -8,14 +8,14 @@ const props = defineProps<{
 </script>
 
 <template>
-    <div class="border border-black">
+    <div class="border border-black p-3">
         <div>트러블슈터: {{ props.masteryBook.RosterKey }}</div>
         <div>클래스: {{ props.masteryBook.Job }}</div>
         <div>레벨: {{ props.masteryBook.RosterLevel }}</div>
         <!-- <div>{{ props.masteryBook.RosterType }}</div> -->
         <!-- <div>{{ props.masteryBook.Version }}</div> -->
 
-        <div class="grid grid-cols-1 lg:grid-cols-3">
+        <div class="grid grid-cols-1 gap-2 lg:grid-cols-3">
             <Category
                 v-for="masteriesInCategory in props.masteryBook.Mastery"
                 :masteries-in-category="masteriesInCategory"
