@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <router-view></router-view>
+    <h1>특성판 공유</h1>
 </template>
 
 <style>
