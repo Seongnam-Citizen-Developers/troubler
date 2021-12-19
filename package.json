@@ -2,6 +2,7 @@
   "name": "troubler",
   "version": "0.0.0",
   "scripts": {
+    "func": "npm run start --prefix ./api",
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview"
