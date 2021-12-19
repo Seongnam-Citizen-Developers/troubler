@@ -1,19 +1,3 @@
-type RosterType = string
-type RosterKey = string
-type Job = string
-
-type MasteryCategory = string
-
-type Mastery = {
-  Name: string
-  Cost: number
-}
-
-type MasteriesInCategory = {
-  Category: MasteryCategory
-  Masteries: Mastery[]
-}
-
 export type MasteryBook = {
   Version: number
   RosterType: RosterType
@@ -21,4 +5,20 @@ export type MasteryBook = {
   RosterLevel: number
   Job: Job
   Mastery: MasteriesInCategory[]
+}
+
+type RosterType = string
+type RosterKey = string
+type Job = string
+
+export type MasteriesInCategory = {
+  Category: MasteryCategory
+  Masteries: Mastery[]
+}
+
+type MasteryCategory = string
+
+export type Mastery = {
+  Name: string
+  Cost: number
 }
