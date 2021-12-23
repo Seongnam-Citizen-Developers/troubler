@@ -17,7 +17,7 @@ Since TypeScript cannot handle type information for `.vue` imports, they are shi
 https://troubler.juho.kim/mastery/book/share/{SKILL_CODE}
 
 ## todo
-- MasteryBook 코드를 통한 특성판 페이지 구현 + 다국어 지원
+- ~~MasteryBook 코드를 통한 특성판 페이지 구현~~ + 다국어 지원
 - 특성 종류(방어 공격 등), 특성 이름, 특성 포인트 3가지만 표시
 - iframe 페이지 구현 (웹사이트 용)
 - opengraph meta image 구현 (디스코드 미리보기 용)
