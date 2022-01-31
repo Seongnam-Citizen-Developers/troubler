@@ -16,7 +16,6 @@ const httpTrigger: AzureFunction = async function (
       body: response,
     }
   } catch (e) {
-    console.log('asjfosejaoisaefj', e)
     context.res = {
       status: 404,
       body: 'NOT FOUND',

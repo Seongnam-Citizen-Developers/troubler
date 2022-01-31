@@ -1,3 +1,7 @@
 {
-  "recommendations": ["johnsoncodehk.volar", "bradlc.vscode-tailwindcss"]
+  "recommendations": [
+    "ms-azuretools.vscode-azurefunctions",
+    "johnsoncodehk.volar",
+    "bradlc.vscode-tailwindcss"
+  ]
 }
