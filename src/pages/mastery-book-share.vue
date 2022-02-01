@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { computed, ref, watchEffect } from 'vue'
 import { useRoute } from 'vue-router';
-import { MasteryBook } from '../Mastery/types';
-import { getMasteryBook } from '../Mastery/utils';
-import Book from '../Mastery/components/Book.vue';
+import { MasteryBook } from '../Masterybook/types';
+import { getMasteryBook } from '../Masterybook/utils';
+import Book from '../Masterybook/components/Book.vue';
 
 const route = useRoute()
 const code = computed({

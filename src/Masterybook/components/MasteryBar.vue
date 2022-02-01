@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Mastery } from '../types';
+import { Mastery } from '../../Mastery/types';
 
 const props = defineProps<{
     mastery: Mastery
