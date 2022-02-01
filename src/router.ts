@@ -1,14 +1,42 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 
 import Index from './pages/index.vue'
-import MasteryBookShare from './pages/mastery-book-share.vue'
+import PostsIndex from './pages/posts/index.vue'
+import PostsId from './pages/posts/id.vue'
+import PostsIdEdit from './pages/posts/id-edit.vue'
+import PostsWrite from './pages/posts/write.vue'
+
+import DatabaseMasteriesIndex from './pages/database/masteries/index.vue'
+import DatabaseMasterybooksShareCode from './pages/database/masterybooks/share-code.vue'
 
 const routes: RouteRecordRaw[] = [
-  { name: 'index', path: '/', component: Index },
   {
-    name: 'masteryBookShare',
-    path: '/mastery/book/share/:code?',
-    component: MasteryBookShare,
+    path: '/',
+    component: Index
+  },
+  {
+    path: '/posts/write',
+    component: PostsWrite
+  },
+  {
+    path: '/posts/:id/edit',
+    component: PostsIdEdit
+  },
+  {
+    path: '/posts/:id',
+    component: PostsId
+  },
+  {
+    path: '/posts',
+    component: PostsIndex
+  },
+  {
+    path: '/database/masteries',
+    component: DatabaseMasteriesIndex
+  },
+  {
+    path: '/database/masterybooks/share/:code?',
+    component: DatabaseMasterybooksShareCode
   },
 ]
 
