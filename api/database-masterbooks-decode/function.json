@@ -17,5 +17,5 @@
       "name": "res"
     }
   ],
-  "scriptFile": "../dist/masteryBooks/index.js"
+  "scriptFile": "../dist/database-masterybooks-decode/index.js"
 }
