@@ -1,0 +1,11 @@
+/* 
+  https://developer.mozilla.org/ko/docs/Web/CSS/var() 
+  https://colorhunt.co/palette/ffcf1781691d790601000000
+*/
+
+:root {
+  --main-color-0: rgb(255, 207, 23);
+  --main-color-1: rgb(129, 105, 29);
+  --main-color-2: rgb(121, 6, 1);
+  --main-color-3: rgb(0, 0, 0);
+}
