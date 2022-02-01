@@ -5,9 +5,11 @@
       "type": "httpTrigger",
       "direction": "in",
       "name": "req",
-      "route": "masteryBooks/{code}",
+      "route": "database/masterybooks/decode/{code}",
       "dataType": "string",
-      "methods": ["get"]
+      "methods": [
+        "get"
+      ]
     },
     {
       "type": "http",
