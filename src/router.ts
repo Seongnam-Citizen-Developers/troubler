@@ -40,9 +40,9 @@ const routes: RouteRecordRaw[] = [
   },
 ]
 
-const Router = createRouter({
+const router = createRouter({
   history: createWebHistory(),
   routes,
 })
 
-export default Router
+export { router } 
