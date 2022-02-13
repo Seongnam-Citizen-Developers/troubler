@@ -1,5 +1,5 @@
 <template>
-  <div class="container">footer</div>
+  <div class="bg-gray-500 p-5">footer</div>
 </template>
 
 <style scoped>

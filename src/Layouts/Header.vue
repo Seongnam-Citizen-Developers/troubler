@@ -5,7 +5,7 @@ const { locale } = useI18n({ useScope: 'global' })
 </script>
 
 <template>
-  <div class="container">
+  <div class="bg-gray-400 p-5">
     <form>
       <label v-t="'language'" />
       <select v-model="locale">
@@ -18,13 +18,6 @@ const { locale } = useI18n({ useScope: 'global' })
     </form>
   </div>
 </template>
-
-<style scoped>
-.container {
-  background-color: grey;
-  padding: 10px;
-}
-</style>
 
 <i18n lang="yaml">
 ko:

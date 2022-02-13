@@ -1,12 +1,11 @@
 <template>
-  <metainfo>
-    <!-- v-slot 뭔지 더 공부하기-->
+  <!-- <metainfo>
     <template v-slot:title="{ content }">
       {{
         content ? `${content}` : `쓰레기`
       }}
     </template>
-  </metainfo>
+  </metainfo>-->
   <router-view></router-view>
 </template>
 
