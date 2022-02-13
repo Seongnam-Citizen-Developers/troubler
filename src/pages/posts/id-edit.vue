@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import Layout from '../../Layouts/Layout.vue';
+</script>
+
 <template>
-  <h1>posts > id > edit</h1>
+  <Layout>
+    <h1>posts > id > edit</h1>
+  </Layout>
 </template>

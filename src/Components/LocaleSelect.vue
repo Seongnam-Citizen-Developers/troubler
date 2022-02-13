@@ -11,21 +11,29 @@ const { t } = useI18n()
 </script>
 
 <template>
-    <select v-model="locale">
+  <form>
+    <label>
+      {{ t('language') }}
+      <select v-model="locale">
         <option v-for="locale of SupportedLocales" :key="locale" :value="locale">{{ t(locale) }}</option>
-    </select>
+      </select>
+    </label>
+  </form>
 </template>
 
 <i18n lang="yaml">
 ko:
+  language: "언어"
   ko: "한국어"
   en: "English"
   ja: "日本語"
 en: 
+  language: "Language"
   ko: "한국어"
   en: "English"
   ja: "日本語"
 ja:
+  language: "言語"
   ko: "한국어"
   en: "English"
   ja: "日本語"

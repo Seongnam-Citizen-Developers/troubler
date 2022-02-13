@@ -1,43 +1,48 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 
 import Index from './pages/index.vue'
+import Info from './pages/info.vue'
 import PostsIndex from './pages/posts/index.vue'
 import PostsId from './pages/posts/id.vue'
 import PostsIdEdit from './pages/posts/id-edit.vue'
 import PostsWrite from './pages/posts/write.vue'
 
-import DatabaseMasteriesIndex from './pages/database/masteries/index.vue'
-import DatabaseMasterybooksShareCode from './pages/database/masterybooks/share-code.vue'
+import DatabasesMasteryIndex from './pages/databases/mastery/index.vue'
+import DatabaseMasterybooksShareCode from './pages/databases/masterybook/share-code.vue'
 
 const routes: RouteRecordRaw[] = [
   {
     path: '/',
-    component: Index
+    component: Index,
+  },
+  {
+    path: '/info',
+    component: Info,
   },
   {
     path: '/posts/write',
-    component: PostsWrite
+    component: PostsWrite,
   },
   {
     path: '/posts/:id/edit',
-    component: PostsIdEdit
+    component: PostsIdEdit,
   },
   {
     path: '/posts/:id',
-    component: PostsId
+    component: PostsId,
   },
   {
     path: '/posts',
-    component: PostsIndex
+    component: PostsIndex,
   },
   {
-    path: '/database/masteries',
-    component: DatabaseMasteriesIndex
+    path: '/databases/mastery',
+    component: DatabasesMasteryIndex,
   },
-  {
-    path: '/database/masterybooks/share/:code?',
-    component: DatabaseMasterybooksShareCode
-  },
+  // {
+  //   path: '/databases/masterybook/share/:code?',
+  //   component: DatabaseMasterybooksShareCode,
+  // },
 ]
 
 const router = createRouter({
@@ -45,4 +50,4 @@ const router = createRouter({
   routes,
 })
 
-export { router } 
+export { router }

@@ -1,15 +1,12 @@
 <script setup lang="ts">
-import { computed, ref, watchEffect } from 'vue'
+import { readonly, Ref, ref, toRef, watchEffect } from 'vue'
 import { useRoute } from 'vue-router';
 import { MasteryBook } from '../../../Masterybook/types';
 import { getMasteryBook } from '../../../Masterybook/utils';
 import Book from '../../../Masterybook/components/Book.vue';
 
 const route = useRoute()
-const code = computed({
-    get: () => route.params.code as string,
-    set: () => { }
-})
+const code = readonly(toRef(route.params, 'code') as Ref<string>)
 const masteryBook = ref<MasteryBook | null>(null)
 
 watchEffect(() => {
