@@ -2,13 +2,13 @@
 import { useI18n } from 'vue-i18n'
 import Layout from '../Layouts/Layout.vue';
 
-useI18n()
+const { t } = useI18n()
 </script>
 
 <template>
   <Layout>
     <h1 class="text-3xl font-bold underline">Troubler</h1>
-    <p v-t="'message'" />
+    <p>{{ t('message') }}</p>
   </Layout>
 </template>
 

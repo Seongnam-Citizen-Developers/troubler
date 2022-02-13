@@ -1,20 +1,15 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
+import LocaleSelect from '../Components/LocaleSelect.vue';
 
-const { locale } = useI18n({ useScope: 'global' })
+const { t } = useI18n()
 </script>
 
 <template>
   <div class="bg-gray-400 p-5">
     <form>
-      <label v-t="'language'" />
-      <select v-model="locale">
-        <option
-          v-for="locale in ['ko', 'en', 'ja']"
-          :key="`locale-${locale}`"
-          :value="locale"
-        >{{ locale }}</option>
-      </select>
+      <label>{{ t('language') }}</label>
+      <LocaleSelect />
     </form>
   </div>
 </template>
